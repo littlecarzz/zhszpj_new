@@ -1,0 +1,24 @@
+server:
+  port: 8002
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zhszpj_new
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    open-in-view: true
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+  http:
+    encoding:
+      charset: UTF-8
+  devtools:
+    restart:
+      enabled: true
